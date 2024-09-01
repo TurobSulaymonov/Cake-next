@@ -1,5 +1,5 @@
 "use client";
-import { BlogType, ProductType } from "@/types";
+import { BlogType, ProductType } from "../types";
 import { allProductList, blogList } from "../data/Data";
 import {
   createContext,

@@ -336,21 +336,7 @@ const PropertyDetail: NextPage = ({ initialComment, ...props }: any) => {
          <AddIcon/>
         </button>
 		<button className="fz-product-details__add-to-cart">Add to cart</button>
-		<Box className="button-box">
-			{property?.meLiked && property?.meLiked[0]?.myFavorite ? (
-			<FavoriteIcon color="primary" fontSize={'medium'} />
-			) : (
-			<FavoriteBorderIcon
-			fontSize={'medium'}
-			// @ts-ignore
-			onClick={() => likePropertyHandler(user, property?._id)}
-			/>
-			)}
-			 
-			 <Box classname="removeIcon">
-			 <RemoveRedEyeIcon fontSize="medium" style={{Margin: 10}} />
-			</Box>
-		</Box>
+		
       </div>
 	  
 
